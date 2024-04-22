@@ -1,4 +1,5 @@
 import BannerPic from "../../assets/banner.png"
+import "./Banner.css"
 
 function Banner() {
     return(
