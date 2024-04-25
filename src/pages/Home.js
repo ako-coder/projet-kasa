@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react"
-import Banner from "./Banner/Banner"
-import Cards from "./Cards"
+import Banner from "../components/Banner/Banner"
+import Cards from "../components/Cards/Cards"
+import BannerPic from "../assets/banner.png"
 
 function Home() {
 
-    const [properties, setProperties] = useState()
+    const [properties, setProperties] = useState([])
 
-    useEffect(()=>{
+    useEffect(()=> {
         async function getProperties() {
             try {
                 const response = await fetch('http://localhost:8080/api/properties')
                 const propz = await response.json()
-        
+                
                 setProperties(propz)
             } catch (error) {
                 console.error('Erreur lors de la requête fetch :', error)
@@ -22,8 +23,8 @@ function Home() {
 
     return(
     <div>
-        <Banner />
-        <Cards />
+        <Banner image={BannerPic}/>
+        <Cards properties={properties}/>
     </div>
     ) 
 }

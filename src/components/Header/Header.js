@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom"
 import HeaderPic from "../../assets/logo.png"
 import './Header.css'
 
 function Header() {
     return(
     <div className="header-container">
-        <img src={HeaderPic}></img>
-        <div className="header-links">
-            <a href="">Accueil</a> <a href="">A propos</a>
-        </div>        
+        <img className="logo" src={HeaderPic}></img>        
+        <nav className="header-links">
+            <NavLink to="/" style={({ isActive }) => isActive ? { textDecoration:"underline" } : null}>Accueil</NavLink>
+            <NavLink to="/a-propos" style={({ isActive }) => isActive ? { textDecoration:"underline" } : null}>A propos</NavLink>
+        </nav>                
     </div>
     )
 }
