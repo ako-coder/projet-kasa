@@ -1,11 +1,19 @@
+import { useNavigate } from 'react-router-dom'
 import './Card.css'
 
-function Card({title, image}) {
+function Card({property}) {
+   
+    let navigate = useNavigate()
+
+    function handleClick() {
+        navigate(`/fiche/${property.id}`, { state: { property }})
+    }
+
     return(
-    <div className='card-container'>
-        <p>{ title }</p>
+    <div className='card-container' onClick={handleClick}>
+        <p>{ property.title }</p>
         <div className='card-gradient'></div>
-        <img src={ image }></img>
+        <img src={ property.cover }></img>
     </div>
     )
 }
