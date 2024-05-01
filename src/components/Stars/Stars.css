@@ -1,0 +1,14 @@
+.stars-container {  
+    display: flex;
+    flex-direction: row;  
+    width: 196px;
+    height: 36px;
+}
+
+.red-star {
+    color: rgba(255, 96, 96, 1);
+}
+
+.grey-star {
+    color: rgba(227, 227, 227, 1);
+}

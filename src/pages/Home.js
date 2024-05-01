@@ -23,7 +23,7 @@ function Home() {
 
     return(
     <div>
-        <Banner image={BannerPic}/>
+        <Banner image={BannerPic} text={"<span>Chez vous,</span> partout et ailleurs"} />
         <Cards properties={properties}/>
     </div>
     ) 

@@ -10,3 +10,18 @@
     font-weight: 500;
     font-size: 24px;
 }
+
+@media (max-width: 414px){
+    .footer-container p {        
+        font-size: 12px;
+    }
+
+    .footer-container span {
+        display: block;
+    }
+
+    .footer-container {
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+}

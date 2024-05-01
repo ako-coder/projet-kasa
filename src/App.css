@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* TODO: ajouter marge globale à <main> du Layout */
 main {
   margin-left: 10%; 
   margin-right: 10%;
@@ -42,5 +41,12 @@ main {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 414px){
+  main {
+    margin-left: 5%; 
+    margin-right: 5%;
   }
 }
