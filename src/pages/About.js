@@ -1,6 +1,7 @@
 import BannerPic from "../assets/banner_about.png"
 import Banner from "../components/Banner/Banner"
 import Dropdown from "../components/Dropdown/Dropdown";
+import './About.css'
 
 function About() {
 
@@ -29,10 +30,11 @@ function About() {
 
     return(<div>
         <Banner image={BannerPic} />
-        {aboutList.map((element)=>(
+        <div className="container-dropdowns">{aboutList.map((element)=>(
             <Dropdown title={element.title} options={[element.content]} />
         ))
         }
+        </div>
     </div>) 
 }
 

@@ -3,6 +3,7 @@
     flex-direction: row;  
     width: 196px;
     height: 36px;
+    justify-content: flex-end;
 }
 
 .red-star {

@@ -1,12 +1,43 @@
 .dropdown-menu {
     visibility: hidden;
-    transition: visibility 0.5s, opacity 0.5s;
     opacity: 0;
+    text-align: left;
+    background-color: rgba(246, 246, 246, 0.45);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
 }
 
-.dropdown-container .dropdown-menu {
+.dropdown-container .dropdown-menu {    
     opacity: 1;
     visibility: visible;
+    width: 80%;
+    list-style-type: none;    
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-container button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    text-align: left;
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px 10px 15px;
+    height: 54px;
 }
 
 /* TODO animation + CSS */
