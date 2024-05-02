@@ -27,11 +27,16 @@
     background-color: rgba(255, 96, 96, 1);
     color: white;
     font-family: "Montserrat", sans-serif;
+    font-size: 24px;
     font-weight: 600;
     border: 0;
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
     height: 54px;
+}
+
+.dropdown-container img {
+    width: 100%;
 }
 
 .dropdown-container ul {
@@ -40,3 +45,14 @@
 }
 
 /* TODO animation + CSS */
+
+@media (max-width: 414px){
+    .dropdown-container img {
+        width: 70%;
+    }
+
+    .dropdown-container button {
+        font-size: 13px;
+        padding: 10px 0px 10px 10px;
+    }
+}
