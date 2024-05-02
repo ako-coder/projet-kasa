@@ -14,10 +14,9 @@
     list-style-type: none;     
 }
 
-/* .dropdown-container {
-    display: flex;
-    flex-direction: column;
-} */
+.dropdown-container {
+    width: 100%;
+}
 
 .dropdown-container button {
     display: flex;
@@ -33,6 +32,11 @@
     border-radius: 5px;
     padding: 10px 20px 10px 15px;
     height: 54px;
+}
+
+.dropdown-container ul {
+    padding: 18px;
+    margin: 0px;
 }
 
 /* TODO animation + CSS */

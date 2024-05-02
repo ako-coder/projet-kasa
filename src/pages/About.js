@@ -30,10 +30,12 @@ function About() {
 
     return(<div>
         <Banner image={BannerPic} />
-        <div className="container-dropdowns">{aboutList.map((element)=>(
-            <Dropdown title={element.title} options={[element.content]} />
-        ))
-        }
+            <div className="about-container">
+                <div className="container-dropdowns">{aboutList.map((element)=>(
+                    <Dropdown title={element.title} options={[element.content]} />
+                ))
+                }
+            </div>
         </div>
     </div>) 
 }
