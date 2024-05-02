@@ -6,5 +6,8 @@
 }
 
 .container-dropdowns button {
-    width: 1023px;
+    width: 1023px;    
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

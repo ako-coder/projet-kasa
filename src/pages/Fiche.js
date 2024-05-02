@@ -9,7 +9,7 @@ function Fiche() {
     const location = useLocation()
     const property = location.state.property
     
-    return(<div>
+    return(<div className="fiche-container">
         <Carousel images={property.pictures} />
         <div className="tags-stars-container">
             <div className="tags-container">
