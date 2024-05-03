@@ -30,7 +30,7 @@
     margin-bottom: 70px;
 }
 
-@media (max-width: 414px){
+@media (max-width: 600px){
     .notfound-container h1 {
         font-size: 96px;
         margin-top: 100px;

@@ -5,6 +5,7 @@
     height: 415px;
     overflow: hidden;
     position: relative;
+    border-radius: 20px;
 }
 
 .carousel-nav {
@@ -37,12 +38,18 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 600px) {
     .carousel-nav img {
         width: 25px;
     }
 
     .carousel-container {
         height: 255px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .carousel-container p {
+        display: none;
     }
 }

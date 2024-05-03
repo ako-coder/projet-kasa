@@ -1,0 +1,34 @@
+.host-container {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+
+.host-container p {     
+    color: rgba(255, 96, 96, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    width: 93px;
+    text-align: right;
+}
+
+.host-container img {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+}
+
+@media (max-width: 600px){
+
+    .host-container img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .host-container p {
+        font-size: 12px;
+        width: 63px;
+        margin: 0px;
+    }
+}

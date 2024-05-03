@@ -19,16 +19,11 @@
     flex-direction: column;
 }
 
-@media (max-width: 414px){
+@media (max-width: 600px){
     .container-dropdowns {
         margin-bottom: 10px;        
         width: 100%;
         gap: 20px;
         padding: 0px 0px 10px 0px;
-    }
-
-    .container-dropdowns button {
-        /* font-size: 13px; */
-        height: 30px;
     }
 }

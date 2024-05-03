@@ -4,6 +4,8 @@ import Tag from "../components/Tag/Tag"
 import './Fiche.css'
 import Stars from '../components/Stars/Stars'
 import Dropdown from "../components/Dropdown/Dropdown"
+import Host from "../components/Host/Host"
+import Title from "../components/Title/Title"
 
 function Fiche() {
     const location = useLocation()
@@ -11,6 +13,14 @@ function Fiche() {
     
     return(<div className="fiche-container">
         <Carousel images={property.pictures} />
+        <div className="title-host-container">
+            <div>
+                <Title property={property} />
+            </div>
+            <div>
+                <Host property={property} />
+            </div>
+        </div>        
         <div className="tags-stars-container">
             <div className="tags-container">
                 {property.tags.map((tag, index)=>(
@@ -19,9 +29,27 @@ function Fiche() {
             </div>
             <Stars rating={property.rating} />            
         </div>
+
+        {/* ---- Mobile ---- */}
+
+                <div className="title-tags-container">
+                    <Title property={property} />
+                    <div className="tags-container">
+                        {property.tags.map((tag, index)=>(
+                            <Tag key={`${index}-${tag}`} title={tag}/>
+                        ))}
+                    </div>
+                </div>
+                <div className="stars-host-container">
+                    <Stars rating={property.rating} />                    
+                    <Host property={property} />                    
+                </div>
+
+        {/* ---- Fin de Mobile ---- */}
+
         <div className="container-fiche-dropdowns">
-            <Dropdown title={"Description"} /*options={property.description.map()}*/ />
-            <Dropdown title={"Équipements"} /> 
+            <Dropdown title={"Description"} options={[property.description]} />
+            <Dropdown title={"Équipements"} options={property.equipments || []} /> 
         </div>                 
     </div>)
 }

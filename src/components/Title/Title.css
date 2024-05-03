@@ -1,0 +1,33 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.title-container p,
+.title-container h1 {
+    margin: 3px;
+}
+
+.title-container h1 {
+    color:  rgba(255, 96, 96, 1);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.title-container p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 600px){
+    .title-container p {
+        font-size: 14px;
+    }
+
+    .title-container h1 {
+        font-size: 18px;
+    }
+}

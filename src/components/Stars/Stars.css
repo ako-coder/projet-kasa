@@ -4,12 +4,31 @@
     width: 196px;
     height: 36px;
     justify-content: flex-end;
+    gap: 12px;
 }
 
 .red-star {
     color: rgba(255, 96, 96, 1);
+    font-size: 24px;
 }
 
 .grey-star {
     color: rgba(227, 227, 227, 1);
+    font-size: 24px;
+}
+
+@media (max-width: 600px){
+    .red-star {
+        font-size: 13px;
+    }
+    
+    .grey-star {
+        font-size: 13px;
+    }
+
+    .stars-container {
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: center;
+    }  
 }
