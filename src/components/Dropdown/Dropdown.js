@@ -16,8 +16,8 @@ function Dropdown({title, options}) {
             <div>{title}</div>
             <div>
                 {isOpen ? 
-                    <img src={arrowDown} alt="Open Image" /> :
-                    <img src={arrowUp} alt="Closed Image" />
+                    <img src={arrowDown} alt="Open" /> :
+                    <img src={arrowUp} alt="Closed" />
                 }   
             </div>
         </button>
