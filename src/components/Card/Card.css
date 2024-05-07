@@ -36,6 +36,11 @@
     text-align: left;
 }
 
+.card-container img {   
+    height: 100%;
+    object-fit: cover;
+}
+
 @media (max-width: 600px){
     .card-container {
         height: 255px;

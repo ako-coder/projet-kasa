@@ -13,7 +13,7 @@ function Card({property}) {
     <div className='card-container' onClick={handleClick}>
         <p>{ property.title }</p>
         <div className='card-gradient'></div>
-        <img src={ property.cover }></img>
+        <img src={ property.cover } alt="Aperçu de l'appartement"></img>
     </div>
     )
 }

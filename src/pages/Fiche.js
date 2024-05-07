@@ -6,11 +6,17 @@ import Stars from '../components/Stars/Stars'
 import Dropdown from "../components/Dropdown/Dropdown"
 import Host from "../components/Host/Host"
 import Title from "../components/Title/Title"
+import NotFound from "./NotFound"
 
 function Fiche() {
     const location = useLocation()
-    const property = location.state.property
-    
+
+    if(location.state === null) {
+        return <NotFound />
+    }
+
+    const property = location.state.property  
+
     return(<div className="fiche-container">
         <Carousel images={property.pictures} />
         <div className="title-host-container">
