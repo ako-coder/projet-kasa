@@ -28,10 +28,10 @@ function Carousel({images}) {
     return(
         <div className='carousel-container'>
             <div className='carousel-nav'>
-                <img src={ArrowBack} onClick={clickBack}></img>
-                <img src={ArrowForward} onClick={clickForward}></img>
+                <img src={ArrowBack} onClick={clickBack} alt='flèche arrière'></img>
+                <img src={ArrowForward} onClick={clickForward} alt='flèche avant'></img>
             </div>            
-            <img className='carousel-slide' src={images[currentIndex]}></img>
+            <img className='carousel-slide' src={images[currentIndex]} alt='photos de propriété'></img>
             <p>{`${currentIndex + 1}/${images.length}`}</p>
         </div>
     )
