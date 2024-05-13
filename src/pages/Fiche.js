@@ -60,6 +60,4 @@ function Fiche() {
     </div>)
 }
 
-/* TODO div avec photo + nom proprio / nom de l'annonce / div stars (trouver dans property) */
-
 export default Fiche

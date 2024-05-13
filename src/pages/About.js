@@ -32,7 +32,7 @@ function About() {
         <Banner image={BannerPic} />
             <div className="about-container">
                 <div className="container-dropdowns">{aboutList.map((element)=>(
-                    <Dropdown title={element.title} options={[element.content]} />
+                    <Dropdown title={element.title} options={[element.content]} key={element.title} />
                 ))
                 }
             </div>

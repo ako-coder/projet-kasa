@@ -7,10 +7,11 @@ function Stars({rating}) {
     const starElements = []
 
     for (let i = 0; i < 5; i++){
+        const key = `star-${i}-${rating}`
         if (i < parseInt(rating, 10)) {
-            starElements.push(<div className='red-star'><FontAwesomeIcon icon={faStar} /></div>)
+            starElements.push(<div className='red-star' key={key}><FontAwesomeIcon icon={faStar} /></div>)
         } else {
-            starElements.push(<div className='grey-star'><FontAwesomeIcon icon={faStar} /></div>)
+            starElements.push(<div className='grey-star' key={key}><FontAwesomeIcon icon={faStar} /></div>)
         }
          
     }
