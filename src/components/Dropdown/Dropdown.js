@@ -21,13 +21,12 @@ function Dropdown({title, options}) {
                 }   
             </div>
         </button>
-        <div>{isOpen &&
-                <ul className="dropdown-menu">
-                    {options.map((option, index)=>(
-                        <li key={`${option}-${index}`}>{option}</li>
-                    ))}
-                </ul>
-            }
+        <div className={`dropdown-menu ${isOpen ? 'open' : ''}`}>
+            <ul>
+                {options.map((option, index)=>(
+                    <li key={`${option}-${index}`}>{option}</li>
+                ))}
+            </ul>
         </div>
     </div>
     )
