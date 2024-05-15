@@ -6,7 +6,7 @@ function Card({property}) {
     let navigate = useNavigate()
 
     function handleClick() {
-        navigate(`/fiche/${property.id}`, { state: { property }})
+        navigate(`/fiche/${property.id}`)
     }
 
     return(

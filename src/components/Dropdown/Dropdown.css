@@ -45,8 +45,6 @@
     margin: 0px;
 }
 
-/* TODO animation + CSS */
-
 @media (max-width: 600px){
     .dropdown-container img {
         width: 70%;
